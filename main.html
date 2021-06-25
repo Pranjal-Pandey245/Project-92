@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project 89</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="math.css">
+
+
+</head>
+
+<body class="body_bg">
+    <div class="container">
+        <center>
+            <h1>Math Game</h1>
+            <hr>
+            <br>
+        </center>
+
+        <h4 style="color: black;" id="player1_name"></h4><span style="color: black;" id="player1_score"></span>
+        <br>
+        <h4 style="color: black;" id="player2_name"></h4><span style="color: black;" id="player2_score"></span>
+
+        <center>
+            <h3 style="color: white;">Question turn - <span id="player_q"></span></h3>
+            <br>
+            <h3 style="color: white;">Answer turn - <span id="player_a"></span></b></h3>
+            <br><br><br>
+            <div id="output">
+
+            </div>
+
+            <label style="color: white; font-size: 18px;">First number</label>
+            <br>
+            <input id="1i" style="width: 80%;" placeholder="type here">
+            <br><br>
+            <label style="color: white; font-size: 18px;">Second number</label>
+            <br>
+            <input id="2i" style="width: 80%;" placeholder="type here">
+            <br><br>
+            <button onclick="send()" type="button" style="width: 30%;" class="btn btn-success">send</button>
+        </center>
+        <script src="main.js"></script>                 
+    </div>
+</body>
